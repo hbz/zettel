@@ -352,16 +352,19 @@ db {
 
 http.port="9001"
 http.path="/tools/"
-play.http.context="/tools/zettel"
-contextUrl="http://api.regal.vagrant/tools/etikett/context.json"
-etikettService="http://api.regal.vagrant/tools/etikett"
+play.http.context="/tools/forms"
+contextUrl="http://api.to.science.vagrant/tools/labels/context.json"
+etikettService="http://api.to.science.vagrant/tools/labels"
 etikettUser=admin
 etikettPwd=admin
-zettel.researchData.helpText="http://regal.vagrant/node/1"
-zettel.proceeding.helpText="http://regal.vagrant/node/1"
-zettel.article.helpText="http://regal.vagrant/node/1"
-zettel.chapter.helpText="http://regal.vagrant/node/1"
-regalApi="http://api.regal.vagrant"
+zettel.researchData.helpText="http://to.science.vagrant/node/1"
+zettel.proceeding.helpText="http://to.science.vagrant/node/1"
+zettel.article.helpText="http://to.science.vagrant/node/1"
+zettel.chapter.helpText="http://to.science.vagrant/node/1"
+regalApi="http://api.to.science.vagrant"
 play.http.parser.maxMemoryBuffer= 2MB
 play.http.parser.maxDiskBuffer = 20MB
 parsers.anyContent.maxLength = 20MB
+crossrefFundersApiUrl = "https://api.crossref.org/funders" 
+crossrefFundersApiTimeout = 10000
+crossrefFundersApiUserAgent = "to.science (https://github.com/hbz/to.science.forms; mailto:frl-admin@hbz-nrw.de)"
